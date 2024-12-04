@@ -1,0 +1,110 @@
+/* Gaya dasar untuk modal */
+.modal-header {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: 2px solid #495057;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: none;
+}
+
+.btn-primary,
+.btn-danger {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.btn-close {
+    background-color: transparent;
+    border: none;
+}
+
+/* Spasi di dalam modal */
+.modal-body {
+    padding: 20px;
+}
+.modal .form-label {
+    font-weight: 600;
+}
+.modal .form-control {
+    border-radius: 8px;
+}
+
+/* Gaya Tabel */
+.card-header {
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table-secondary {
+    background-color: #e9ecef;
+}
+
+.table thead th {
+    font-weight: 600;
+}
+
+.table tbody td img {
+    border-radius: 5px;
+}
+
+.table tbody .btn {
+    margin-right: 5px;
+    font-size: 0.875rem;
+    padding: 5px 10px;
+}
+
+/* Gaya Form */
+.form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: none;
+}
+/* Pemberitahuan */
+.alert {
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+/* Tombol Aksi */
+.table tbody .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

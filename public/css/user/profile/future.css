@@ -1,0 +1,82 @@
+/* General Card Style */
+.card-modern {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-modern:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-header.bg-gradient-primary {
+    background: linear-gradient(145deg, #007bff, #0056b3);
+}
+
+.card-header.bg-gradient-info {
+    background: linear-gradient(145deg, #17a2b8, #138496);
+}
+
+.card-header.bg-gradient-success {
+    background: linear-gradient(145deg, #28a745, #218838);
+}
+
+.fs-5 {
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+}
+
+ul.list-unstyled li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul.list-unstyled li i {
+    font-size: 1.2rem;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Container and spacing */
+.container {
+    margin-top: 30px;
+}
+
+h2.text-primary {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.row.g-4 {
+    margin-top: 30px;
+}

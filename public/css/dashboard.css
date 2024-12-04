@@ -1,0 +1,13 @@
+.menu-item {
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #d9534f;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.menu-item:hover a {
+    color: white;
+}

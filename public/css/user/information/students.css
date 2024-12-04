@@ -1,0 +1,39 @@
+body {
+    background-color: #f5f7fa;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    margin: auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .table {
+        font-size: 12px;
+    }
+
+    .table th {
+        font-size: 14px;
+    }
+
+    .table td {
+        font-size: 12px;
+    }
+
+    .table td,
+    .table th {
+        padding: 0.5rem;
+    }
+}

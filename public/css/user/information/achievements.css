@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    font-family: "Poppins", sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #f23030, #ee2c4c);
+    color: white;
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.card-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+}
+
+.card-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.img-thumbnail {
+    max-width: 180px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 20%;
+    transition: transform 0.4s ease;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.2);
+}
+
+.member-list {
+    padding-left: 1rem;
+    border-left: 4px solid #f4183d;
+    margin-top: 1rem;
+}
+
+.member-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.member-list li:hover {
+    color: #f3294b;
+}
+
+.achievements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card-header {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .card-body {
+        padding: 0.8rem;
+    }
+
+    .img-thumbnail {
+        max-width: 100px;
+        max-height: 80px;
+    }
+
+    .member-list {
+        padding-left: 0.5rem;
+        border-left-width: 2px;
+    }
+
+    .member-list li {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .achievements-container {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand-custom {
+    margin-left: 10px !important;
+}
+
+.navbar-menu-wrapper {
+    border-radius: 50px 0 0 50px;
+    background-color: rgba(233, 49, 49, 0.931);
+    padding: 0.5rem;
+    color: white;
+}
+
+.nav-item {
+    margin-right: 1.5rem;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    margin-top: 8%;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .content {
+        margin-top: 5rem;
+    }
+    .navbar-menu-wrapper {
+        border-radius: 10px;
+        background-color: rgb(246, 47, 47);
+        padding: 1rem;
+        color: white;
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .navbar-brand-custom {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand-custom img {
+        width: 30%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.75rem;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand-custom img {
+        width: 20%;
+        margin-left: 10px;
+    }
+}

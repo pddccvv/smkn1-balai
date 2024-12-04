@@ -1,0 +1,46 @@
+.facility-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.facility-card .card-body {
+    padding: 20px;
+}
+
+.facility-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.facility-card .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.facility-card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.facility-card .card-body:hover {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .facility-card {
+        margin: 10px 0;
+    }
+
+    .facility-card img {
+        max-height: 150px;
+    }
+}

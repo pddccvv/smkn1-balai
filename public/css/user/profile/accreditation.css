@@ -1,0 +1,104 @@
+.bg-gradient-primary {
+    background: linear-gradient(90deg, #0066ff, #00ccff);
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(90deg, #ff6f61, #ff9671);
+}
+
+.btn-gradient-primary {
+    background: linear-gradient(90deg, #0066ff, #00ccff);
+    border: none;
+}
+
+.btn-gradient-primary:hover {
+    background: linear-gradient(90deg, #0055cc, #0099cc);
+}
+
+.btn-gradient-secondary {
+    background: linear-gradient(90deg, #ff6f61, #ff9671);
+    border: none;
+}
+
+.btn-gradient-secondary:hover {
+    background: linear-gradient(90deg, #e55a50, #ff8462);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 576px) {
+    .row > .col-md-6 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .row > .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card-header h5 {
+        font-size: 1.1rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-header h5 {
+        font-size: 1rem;
+    }
+
+    .card-body p {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+}
